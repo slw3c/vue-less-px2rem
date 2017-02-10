@@ -1,0 +1,88 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@4.0.5
+3 info using node@v6.3.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/shaoling/shaoling/node-npm/vue-less-px2rem',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/shaoling/.npm/vue-less-px2rem/1.0.6/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/shaoling/.npm correctMkdir not in flight; initializing
+10 info lifecycle vue-less-px2rem@1.0.6~prepublish: vue-less-px2rem@1.0.6
+11 silly lifecycle vue-less-px2rem@1.0.6~prepublish: no script for prepublish, continuing
+12 info lifecycle vue-less-px2rem@1.0.6~prepare: vue-less-px2rem@1.0.6
+13 silly lifecycle vue-less-px2rem@1.0.6~prepare: no script for prepare, continuing
+14 verbose tar pack [ '/Users/shaoling/.npm/vue-less-px2rem/1.0.6/package.tgz',
+14 verbose tar pack   '/Users/shaoling/shaoling/node-npm/vue-less-px2rem' ]
+15 verbose tarball /Users/shaoling/.npm/vue-less-px2rem/1.0.6/package.tgz
+16 verbose folder /Users/shaoling/shaoling/node-npm/vue-less-px2rem
+17 verbose addLocalTarball adding from inside cache /Users/shaoling/.npm/vue-less-px2rem/1.0.6/package.tgz
+18 verbose correctMkdir /Users/shaoling/.npm correctMkdir not in flight; initializing
+19 silly cache afterAdd vue-less-px2rem@1.0.6
+20 verbose afterAdd /Users/shaoling/.npm/vue-less-px2rem/1.0.6/package/package.json not in flight; writing
+21 verbose correctMkdir /Users/shaoling/.npm correctMkdir not in flight; initializing
+22 verbose afterAdd /Users/shaoling/.npm/vue-less-px2rem/1.0.6/package/package.json written
+23 silly publish { name: 'vue-less-px2rem',
+23 silly publish   version: '1.0.6',
+23 silly publish   description: '用于样式表中px/rem相互转换',
+23 silly publish   main: 'index.js',
+23 silly publish   dependencies: { 'aimee-extend': '^1.0.1', 'linco.lab': '^0.2.4' },
+23 silly publish   devDependencies: {},
+23 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+23 silly publish   repository:
+23 silly publish    { type: 'git',
+23 silly publish      url: 'git+https://github.com/liuhaixia888/vue-less-px2rem.git' },
+23 silly publish   author: { name: 'haixialiu' },
+23 silly publish   license: 'ISC',
+23 silly publish   bugs: { url: 'https://github.com/liuhaixia888/vue-less-px2rem/issues' },
+23 silly publish   homepage: 'https://github.com/liuhaixia888/vue-less-px2rem#readme',
+23 silly publish   readme: '# vue-less-px2rem\n\n----\n用于样式表中px/rem相互转换\n\n```\nnpm install vue-less-px2rem -g\n```\n\n```\nfis.config.merge({\n    modules: {\n        parser:{\n            less: [\'less-px2rem\']\n        }       \n    },\n\n    settings: {\n        parser: {\n            // 插件配置\n            \'less-px2rem\': { \n                constant: 100,\n                convertTo: \'rem\',\n                rounding: \'round\', //floor ceil round none\n                am2px: true, //可选\n                border: true, //可选convertTo: \'rem\'才起作用, 除了border 1px, 其他的都将px转化为rem\n                border1px: true //可选convertTo: \'rem\'才起作用, 所有的px转换为rem\n            } \n        }\n    }\n})\n```',
+23 silly publish   readmeFilename: 'README.md',
+23 silly publish   gitHead: 'b56011a0749e607828c3a04e0b846fe727a8b18f',
+23 silly publish   _id: 'vue-less-px2rem@1.0.6',
+23 silly publish   _shasum: 'cda79e25ea9d63a9fb2157f594c054d2d6331756',
+23 silly publish   _from: '.' }
+24 info lifecycle vue-less-px2rem@1.0.6~prepublishOnly: vue-less-px2rem@1.0.6
+25 silly lifecycle vue-less-px2rem@1.0.6~prepublishOnly: no script for prepublishOnly, continuing
+26 verbose getPublishConfig undefined
+27 silly mapToRegistry name vue-less-px2rem
+28 silly mapToRegistry using default registry
+29 silly mapToRegistry registry https://registry.npmjs.org/
+30 silly mapToRegistry data Result {
+30 silly mapToRegistry   raw: 'vue-less-px2rem',
+30 silly mapToRegistry   scope: null,
+30 silly mapToRegistry   escapedName: 'vue-less-px2rem',
+30 silly mapToRegistry   name: 'vue-less-px2rem',
+30 silly mapToRegistry   rawSpec: '',
+30 silly mapToRegistry   spec: 'latest',
+30 silly mapToRegistry   type: 'tag' }
+31 silly mapToRegistry uri https://registry.npmjs.org/vue-less-px2rem
+32 verbose publish registryBase https://registry.npmjs.org/
+33 silly publish uploading /Users/shaoling/.npm/vue-less-px2rem/1.0.6/package.tgz
+34 verbose stack Error: auth required for publishing
+34 verbose stack     at CachingRegistryClient.publish (/usr/local/lib/node_modules/.npm_npminstall/node_modules/.4.0.5@npm/node_modules/npm-registry-client/lib/publish.js:30:14)
+34 verbose stack     at /usr/local/lib/node_modules/.npm_npminstall/node_modules/.4.0.5@npm/lib/publish.js:137:14
+34 verbose stack     at mapToRegistry (/usr/local/lib/node_modules/.npm_npminstall/node_modules/.4.0.5@npm/lib/utils/map-to-registry.js:62:3)
+34 verbose stack     at publish_ (/usr/local/lib/node_modules/.npm_npminstall/node_modules/.4.0.5@npm/lib/publish.js:108:3)
+34 verbose stack     at Array.<anonymous> (/usr/local/lib/node_modules/.npm_npminstall/node_modules/.4.0.5@npm/node_modules/slide/lib/bind-actor.js:15:8)
+34 verbose stack     at LOOP (/usr/local/lib/node_modules/.npm_npminstall/node_modules/.4.0.5@npm/node_modules/slide/lib/chain.js:15:14)
+34 verbose stack     at /usr/local/lib/node_modules/.npm_npminstall/node_modules/.4.0.5@npm/node_modules/slide/lib/chain.js:18:7
+34 verbose stack     at done (/usr/local/lib/node_modules/.npm_npminstall/node_modules/.4.0.5@npm/lib/utils/lifecycle.js:132:5)
+34 verbose stack     at LOOP (/usr/local/lib/node_modules/.npm_npminstall/node_modules/.4.0.5@npm/node_modules/slide/lib/chain.js:7:26)
+34 verbose stack     at /usr/local/lib/node_modules/.npm_npminstall/node_modules/.4.0.5@npm/node_modules/slide/lib/chain.js:18:7
+35 verbose cwd /Users/shaoling/shaoling/node-npm/vue-less-px2rem
+36 error Darwin 13.4.0
+37 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+38 error node v6.3.1
+39 error npm  v4.0.5
+40 error code ENEEDAUTH
+41 error need auth auth required for publishing
+42 error need auth You need to authorize this machine using `npm adduser`
+43 verbose exit [ 1, true ]

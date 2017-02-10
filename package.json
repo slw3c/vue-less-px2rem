@@ -1,0 +1,24 @@
+{
+  "name": "vue-less-px2rem",
+  "version": "1.0.6",
+  "description": "用于样式表中px/rem相互转换",
+  "main": "index.js",
+  "dependencies": {
+    "aimee-extend": "^1.0.1",
+    "linco.lab": "^0.2.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liuhaixia888/vue-less-px2rem.git"
+  },
+  "author": "haixialiu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liuhaixia888/vue-less-px2rem/issues"
+  },
+  "homepage": "https://github.com/liuhaixia888/vue-less-px2rem#readme"
+}
